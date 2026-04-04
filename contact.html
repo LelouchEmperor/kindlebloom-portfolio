@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Kindle Bloom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Kindle Bloom</a>
+    <div class="nav-links">
+      <a href="index.html#projets">Projets</a>
+      <a href="index.html#univers">Univers</a>
+      <a href="contact.html" style="color: #4a8a4a;">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" style="display: block; padding: 5rem 3rem 3rem;">
+    <div class="hero-tag">Me contacter</div>
+    <h1 class="hero-title" style="font-size: 32px; margin-bottom: 0.75rem;">
+      Une idée, une question,<br>
+      <em>un message.</em>
+    </h1>
+    <p class="hero-sub" style="margin-bottom: 3rem;">Je lis tout. Je réponds à tout. Écris-moi.</p>
+
+    <form
+      action="https://formspree.io/f/mjgparvo"
+      method="POST"
+      class="contact-form"
+    >
+      <div class="form-group">
+        <label for="name">Ton prénom</label>
+        <input type="text" id="name" name="name" placeholder="Alex" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Ton email</label>
+        <input type="email" id="email" name="email" placeholder="toi@example.com" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Ton message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Dis-moi tout..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Envoyer le message</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-text">Construit sans script. Sans doublure.</span>
+    <a href="mailto:hello@kindlebloom.fr" class="footer-contact">hello@kindlebloom.fr</a>
+  </footer>
+
+</body>
+</html>
